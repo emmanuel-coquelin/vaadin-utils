@@ -1,0 +1,11 @@
+package ${packageName};
+
+public class ${className}Impl implements ${className}{
+
+    #foreach($method in $methods)
+        public String ${method.method.simpleName}(){
+            return "${method.value}";
+        }
+    #end
+
+}
