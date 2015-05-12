@@ -9,7 +9,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.7</java.version>
     </properties>
 
     <dependencies>
@@ -17,6 +17,7 @@
             <groupId>com.ecoquelin.vaadin</groupId>
             <artifactId>vaadin-utils</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -31,6 +32,7 @@
                     <annotationProcessors>
                         <annotationProcessor>com.ecoquelin.vaadin.utils.processors.I18nConstantProcessor</annotationProcessor>
                     </annotationProcessors>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
                 </configuration>
             </plugin>
 
